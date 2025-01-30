@@ -1,7 +1,7 @@
 # PDF Roster Extractor
 
 ## Description
-This script extracts student roster information (names, emails, and room numbers) from a PDF file and saves it to an Excel file.
+This script extracts information a PDF file and saves it to an Excel file.
 
 ## Requirements
 - Python 3.x
