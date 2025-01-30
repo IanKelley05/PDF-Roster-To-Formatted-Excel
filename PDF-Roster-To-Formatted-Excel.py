@@ -43,10 +43,10 @@ def readPDFPages(page_list, file_path=""): # Fill with file path
     return extracted_text.strip() if extracted_text.strip() else None
 
 def parse_roster(text):
-    EXCLUDE_WORDS = {"State", "Hometown", "Ecol", "Speech", "Language", "Barnechea, Santiago", "Evol", "Environ Biol", "Republic", "Korea","Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun", "Feb", "Sep", "MCUT-N2", "MCUT-C2", "MCUT-N1", "MCUT-N2", "MCUT-N3", "MCUT-N4", "MCUT-N5", "MCUT-N6", "MCUT-N7", "MCUT-N8", "MCUT-S1", "MCUT-S2", "MCUT-S3", "MCUT-S4", "MCUT-S5", "MCUT-S6", "MCUT-S7", "MCUT-S8", "MCUT-C1"}
+    EXCLUDE_WORDS = {"State", "Hometown", "Ecol", "Speech", "Language", "Barnechea, Santiago", "Evol", "Environ Biol","Jan", "Republic", "Korea","Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun", "Feb", "Sep", "MCUT-N2", "MCUT-C2", "MCUT-N1", "MCUT-N2", "MCUT-N3", "MCUT-N4", "MCUT-N5", "MCUT-N6", "MCUT-N7", "MCUT-N8", "MCUT-S1", "MCUT-S2", "MCUT-S3", "MCUT-S4", "MCUT-S5", "MCUT-S6", "MCUT-S7", "MCUT-S8", "MCUT-C1"}
     
     # Pattern for matching names
-    name_pattern = r"([A-Z][a-z]+, [A-Z][a-z]+(?: [A-Z])?)"
+    name_pattern = r"([A-Z][a-z]+, [A-Z][a-zA-Z]+(?: [A-Z])?)"
 
     # Pattern for matching email addresses
     email_pattern = r"(\S+?@\S+?\.\S+)"
